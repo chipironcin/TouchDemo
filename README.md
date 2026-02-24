@@ -48,4 +48,4 @@ Required packages: gcc-arm-linux-gnueabi libc6-dev-armel-cross
 
 ## License
 
-MIT
+GPLv3
