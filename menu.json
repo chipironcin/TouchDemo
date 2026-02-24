@@ -1,0 +1,19 @@
+{
+    "items": [
+        {
+            "name": "TouchDemo",
+            "items": [
+                {
+                    "name": "Stop and clear logs",
+                    "action": "bin/stop-and-clear-logs.sh",
+                    "exitmenu": false
+                },
+                {
+                    "name": "Run touch test",
+                    "action": "bin/start.sh touch.sh",
+                    "exitmenu": false
+                }
+            ]
+        }
+    ]
+}
