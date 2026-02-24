@@ -32,13 +32,15 @@ It serves as a proof-of-concept for interacting with the Kindle's Linux backend.
 
 ## Developer Notes
 
-It includes a modified version (source code and already compiled binary) of the program `evtest` that allows grabbing the block device to prevent the Kindle framework from also reading the touch events and react to them. This way we can safely touch the screen without the actual framework reacting to the events.
+Includes a modified version (source code and already compiled binary) of the program `evtest` that allows grabbing the block device to prevent the Kindle framework from also reading the touch events and react to them. This way we can safely touch the screen without the actual framework reacting to the events.
 
 
 Original source code for `evtest` comes from https://github.com/freedesktop-unofficial-mirror/evtest. Slightly edited to match Kindle PW3 kernel.
 
 Command used for compilation:
+```
 arm-linux-gnueabi-gcc -DKINDLE_PW3 -static -O2 -march=armv7-a -mfloat-abi=soft -o evtest evtest.c
+```
 
 Required packages: gcc-arm-linux-gnueabi libc6-dev-armel-cross
 
